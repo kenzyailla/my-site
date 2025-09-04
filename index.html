@@ -1,209 +1,574 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>مواد التجميل ونسب الاستخدام</title>
+    <title>دليل نسب استخدام مواد التجميل والمنظفات</title>
     <style>
-        body { font-family: Arial, sans-serif; direction: rtl; margin: 20px; }
-        h2 { color: #2c3e50; text-align: center; }
-        table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
-        th { background-color: #3498db; color: white; padding: 10px; text-align: center; }
-        td { padding: 8px; border: 1px solid #ddd; text-align: right; }
-        tr:nth-child(even) { background-color: #f2f2f2; }
-        .active { border-left: 5px solid #e74c3c; }
-        .emulsifiers { border-left: 5px solid #f39c12; }
-        .conditioning { border-left: 5px solid #2ecc71; }
-        .footer { text-align: center; margin-top: 40px; color: #7f8c8d; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            direction: rtl; 
+            margin: 0; 
+            padding: 20px; 
+            background: linear-gradient(to bottom, #f9f9f9, #e8f4f8);
+            color: #333; 
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 32px;
+            margin: 0;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        h2 {
+            color: #2c3e50; 
+            text-align: center; 
+            padding: 15px;
+            margin: 25px 0 15px;
+            border-bottom: 2px solid #3498db;
+            background: #f8f9fa;
+        }
+        h3 {
+            background: #3498db;
+            color: white;
+            padding: 12px 20px;
+            margin: 30px 0 15px;
+            border-radius: 5px;
+            display: inline-block;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-bottom: 30px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            background: white;
+        }
+        th { 
+            background-color: #3498db; 
+            color: white; 
+            padding: 15px; 
+            text-align: center; 
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+        }
+        td { 
+            padding: 12px 15px; 
+            border: 1px solid #ddd; 
+            text-align: right; 
+        }
+        tr:nth-child(even) { 
+            background-color: #f8f9fa; 
+        }
+        tr:hover { 
+            background-color: #edf7fd; 
+            transition: background 0.3s;
+        }
+        .active { 
+            border-left: 5px solid #e74c3c; 
+        }
+        .emulsifiers { 
+            border-left: 5px solid #f39c12; 
+        }
+        .conditioning { 
+            border-left: 5px solid #2ecc71; 
+        }
+        .preservatives { 
+            border-left: 5px solid #9b59b6; 
+        }
+        .detergents { 
+            border-left: 5px solid #1abc9c; 
+        }
+        .others { 
+            border-left: 5px solid #34495e; 
+        }
+        .footer { 
+            text-align: center; 
+            margin-top: 40px; 
+            color: #7f8c8d; 
+            padding: 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #eee;
+        }
+        .note {
+            background: #ffeaa7;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-right: 4px solid #fdcb6e;
+        }
+        .category {
+            margin: 30px 0;
+            padding: 0 20px;
+        }
+        .coming-soon {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border: 1px dashed #ffeaa7;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            th, td {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
     </style>
 </head>
 <body>
-   <h2>دليل نسب استخدام مواد التجميل</h2>
+    <div class="container">
+        <header>
+            <h1>دليل نسب استخدام مواد التجميل والمنظفات</h1>
+            <p>مرجع شامل لنسب الاستخدام الموصى بها للمواد المختلفة</p>
+        </header>
 
-    <h3>🟡 المكونات النشطة / المواد الفعالة</h3>
-    <table>
-        <tr>
-            <th>المادة</th>
-            <th>النوع / الصنف</th>
-            <th>نسبة الاستخدام الموصى بها</th>
-            <th>الاستخدامات الأساسية</th>
-        </tr>
-        <tr class="active">
-            <td>SK Influx V</td>
-            <td>Blend of 3 Ceramides</td>
-            <td>0.5% - 2%</td>
-            <td>تعزيز حاجز البشرة، الترطيب، مضاد للشيخوخة، كريمات الوجه والجسم</td>
-        </tr>
-        <tr class="active">
-            <td>Abil ME 45</td>
-            <td>Quaternized Silicone</td>
-            <td>0.5% - 3%</td>
-            <td>Leave-on products، بلسم الشعر، كريمات الترطيب، يعطي نعومة وملمس حريري</td>
-        </tr>
-        <tr class="active">
-            <td>Varisoft EQ100</td>
-            <td>Premium Conditioning Agent</td>
-            <td>0.5% - 4%</td>
-            <td>بلسم الشعر، ماسكات الشعر، شامبو 2 في 1، تحسين التمشيط واللمعان</td>
-        </tr>
-        <tr class="active">
-            <td>Sophance LA-A</td>
-            <td>Glycolipids with Sodium Lactate</td>
-            <td>1% - 5%</td>
-            <td>مزيلات المكياج، Micellar Water، منظفات لطيفة جدًا للبشرة الحساسة</td>
-        </tr>
-        <tr class="active">
-            <td>PQ 37</td>
-            <td>Thickener / Conditioner</td>
-            <td>1% - 3%</td>
-            <td>بلسم الشعر، ماسكات الشعر، شامبو 2 في 1، يعطي كثافة ونعومة حريرية</td>
-        </tr>
-        <tr class="active">
-            <td>Butylene Glycol</td>
-            <td>Humectant / Solvent</td>
-            <td>2% - 10%</td>
-            <td>مرطب للبشرة والشعر، مذيب للمواد الفعالة، يحسن الإحساس على الجلد</td>
-        </tr>
-        <tr class="active">
-            <td>Hydrolyzed Keratin</td>
-            <td>Protein</td>
-            <td>1% - 5%</td>
-            <td>إصلاح الشعر التالف، تعزيز القوة واللمعان، ماسكات وبلسم</td>
-        </tr>
-        <tr class="active">
-            <td>Hydrolyzed Wheat Protein</td>
-            <td>Protein</td>
-            <td>1% - 5%</td>
-            <td>تعزيز الشعر والبشرة، تحسين التمشيط والمرونة، كريمات ومنتجات الشعر</td>
-        </tr>
-        <tr class="active">
-            <td>Dermofeel Voscolid</td>
-            <td>Natural Oil Thickener</td>
-            <td>1% - 3%</td>
-            <td>زيادة لزوجة الزيوت، كريمات وزيوت الجسم، تحسين الاستحلاب</td>
-        </tr>
-        <tr class="active">
-            <td>Tego Feel C 10</td>
-            <td>Mattifying Agent</td>
-            <td>2% - 5%</td>
-            <td>منتجات الوقاية من الشمس (Sunscreen)، يقلل اللمعان على البشرة الدهنية</td>
-        </tr>
-        <tr class="active">
-            <td>D-Panthenol</td>
-            <td>Vitamin B5</td>
-            <td>0.5% - 5%</td>
-            <td>مرطب ومهدئ للبشرة والشعر، كريمات، بلسم، ماسكات</td>
-        </tr>
-        <tr class="active">
-            <td>Tegosoft Dec</td>
-            <td>Light Emollient</td>
-            <td>3% - 10%</td>
-            <td>كريمات، لوشن، مرطبات، يمنح ملمس خفيف وحريري، سهل الاستحلاب O/W وW/O</td>
-        </tr>
-    </table>
+        <div style="padding: 25px;">
+            <div class="note">
+                <strong>ملاحظة هامة:</strong> هذه النسب إرشادية وقد تختلف حسب التركيبة الكاملة للمنتج والاستخدام النهائي. 
+                يوصى دائماً بإجراء اختبارات قبل الإنتاج النهائي.
+            </div>
 
-    <h3>🟠 المستحلبات / المذيبات / المثبتات</h3>
-    <table>
-        <tr>
-            <th>المادة</th>
-            <th>النوع / الصنف</th>
-            <th>نسبة الاستخدام الموصى بها</th>
-            <th>الاستخدامات الأساسية</th>
-        </tr>
-        <tr class="emulsifiers">
-            <td>Abil Care 85</td>
-            <td>O/W Emulsifier</td>
-            <td>1% - 4%</td>
-            <td>كريمات ولوسيون، يعطي ملمس حريري ناعم</td>
-        </tr>
-        <tr class="emulsifiers">
-            <td>Cetearyl Alcohol</td>
-            <td>Fatty Alcohol / Thickener</td>
-            <td>1% - 5%</td>
-            <td>كريمات، لوشن، بلسم، يعطي قوام واستقرار</td>
-        </tr>
-        <tr class="emulsifiers">
-            <td>Tegocare 165</td>
-            <td>Glyceryl Stearate & PEG-100 Stearate</td>
-            <td>2% - 6%</td>
-            <td>O/W Emulsifier، كريمات ولوسيون، يساعد على بناء القوام</td>
-        </tr>
-        <tr class="emulsifiers">
-            <td>PEG 40</td>
-            <td>Solubilizer</td>
-            <td>0.5% - 3%</td>
-            <td>مزيلات المكياج، منظفات، مذيب للعطور والزيوت</td>
-        </tr>
-        <tr class="emulsifiers">
-            <td>Tween 20</td>
-            <td>Solubilizer / Surfactant</td>
-            <td>0.5% - 2%</td>
-            <td>مزيلات المكياج، Micellar Water، مستحضرات منظفة</td>
-        </tr>
-        <tr class="emulsifiers">
-            <td>Protegin XN</td>
-            <td>W/O Emulsifier</td>
-            <td>2% - 5%</td>
-            <td>كريمات ولوسيون مقاومة للماء، مستحضرات غنية وواقية</td>
-        </tr>
-        <tr class="emulsifiers">
-            <td>Flocare ET 36 V</td>
-            <td>Multi-functional Emulsifier & Stabilizer</td>
-            <td>1% - 4%</td>
-            <td>قاعدة كريمات ولوسيون، يعطي قوام سريع ومستحلب مستقر، متعدد الحواس</td>
-        </tr>
-        <tr class="emulsifiers">
-            <td>Ceteareth 20</td>
-            <td>Emulsifier / Surfactant</td>
-            <td>1% - 3%</td>
-            <td>كريمات، لوشن، شامبو، استحلاب O/W</td>
-        </tr>
-    </table>
+            <div class="category">
+                <h2>🟡 المكونات النشطة / المواد الفعالة</h2>
+                <table>
+                    <tr>
+                        <th>المادة</th>
+                        <th>النوع / الصنف</th>
+                        <th>نسبة الاستخدام الموصى بها</th>
+                        <th>الاستخدامات الأساسية</th>
+                    </tr>
+                    <tr class="active">
+                        <td>SK Influx V</td>
+                        <td>Blend of 3 Ceramides</td>
+                        <td>0.5% - 2%</td>
+                        <td>تعزيز حاجز البشرة، الترطيب، مضاد للشيخوخة، كريمات الوجه والجسم</td>
+                    </tr>
+                    <tr class="active">
+                        <td>Abil ME 45</td>
+                        <td>Quaternized Silicone</td>
+                        <td>0.5% - 3%</td>
+                        <td>Leave-on products، بلسم الشعر، كريمات الترطيب، يعطي نعومة وملمس حريري</td>
+                    </tr>
+                    <tr class="active">
+                        <td>Varisoft EQ100</td>
+                        <td>Premium Conditioning Agent</td>
+                        <td>0.5% - 4%</td>
+                        <td>بلسم الشعر، ماسكات الشعر، شامبو 2 في 1، تحسين التمشيط واللمعان</td>
+                    </tr>
+                    <tr class="active">
+                        <td>Sophance LA-A</td>
+                        <td>Glycolipids with Sodium Lactate</td>
+                        <td>1% - 5%</td>
+                        <td>مزيلات المكياج، Micellar Water، منظفات لطيفة جدًا للبشرة الحساسة</td>
+                    </tr>
+                    <tr class="active">
+                        <td>PQ 37</td>
+                        <td>Thickener / Conditioner</td>
+                        <td>1% - 3%</td>
+                        <td>بلسم الشعر، ماسكات الشعر، شامبو 2 في 1، يعطي كثافة ونعومة حريرية</td>
+                    </tr>
+                    <tr class="active">
+                        <td>Butylene Glycol</td>
+                        <td>Humectant / Solvent</td>
+                        <td>2% - 10%</td>
+                        <td>مرطب للبشرة والشعر، مذيب للمواد الفعالة، يحسن الإحساس على الجلد</td>
+                    </tr>
+                    <tr class="active">
+                        <td>Hydrolyzed Keratin</td>
+                        <td>Protein</td>
+                        <td>1% - 5%</td>
+                        <td>إصلاح الشعر التالف، تعزيز القوة واللمعان، ماسكات وبلسم</td>
+                    </tr>
+                    <tr class="active">
+                        <td>Hydrolyzed Wheat Protein</td>
+                        <td>Protein</td>
+                        <td>1% - 5%</td>
+                        <td>تعزيز الشعر والبشرة، تحسين التمشيط والمرونة، كريمات ومنتجات الشعر</td>
+                    </tr>
+                    <tr class="active">
+                        <td>Dermofeel Voscolid</td>
+                        <td>Natural Oil Thickener</td>
+                        <td>1% - 3%</td>
+                        <td>زيادة لزوجة الزيوت، كريمات وزيوت الجسم، تحسين الاستحلاب</td>
+                    </tr>
+                    <tr class="active">
+                        <td>Tego Feel C 10</td>
+                        <td>Mattifying Agent</td>
+                        <td>2% - 5%</td>
+                        <td>منتجات الوقاية من الشمس (Sunscreen)، يقلل اللمعان على البشرة الدهنية</td>
+                    </tr>
+                    <tr class="active">
+                        <td>D-Panthenol</td>
+                        <td>Vitamin B5</td>
+                        <td>0.5% - 5%</td>
+                        <td>مرطب ومهدئ للبشرة والشعر، كريمات، بلسم، ماسكات</td>
+                    </tr>
+                    <tr class="active">
+                        <td>Tegosoft Dec</td>
+                        <td>Light Emollient</td>
+                        <td>3% - 10%</td>
+                        <td>كريمات، لوشن، مرطبات، يمنح ملمس خفيف وحريري، سهل الاستحلاب O/W وW/O</td>
+                    </tr>
+                </table>
+            </div>
 
-    <h3>🔵 مواد التكييف (للشعر/البشرة)</h3>
-    <table>
-        <tr>
-            <th>المادة</th>
-            <th>النوع / الصنف</th>
-            <th>نسبة الاستخدام الموصى بها</th>
-            <th>الاستخدامات الأساسية</th>
-        </tr>
-        <tr class="conditioning">
-            <td>Polyquaternium 7 (10% SNF)</td>
-            <td>Cationic Polymer</td>
-            <td>0.2% - 1.5%</td>
-            <td>بلسم الشعر، شامبو 2 في 1، تحسين التمشيط والنعومة</td>
-        </tr>
-        <tr class="conditioning">
-            <td>Polyquaternium 10 SNF</td>
-            <td>Cationic Polymer</td>
-            <td>0.1% - 0.5%</td>
-            <td>شامبو، بلسم، ماسكات للشعر، يقلل التشابك والتطاير</td>
-        </tr>
-        <tr class="conditioning">
-            <td>Polyquaternium 7 Super Concentrated (40% active)</td>
-            <td>Cationic Polymer</td>
-            <td>0.1% - 0.8%</td>
-            <td>تركيز عالي للبلسم والماسكات، تكييف فعال وملمس حريري</td>
-        </tr>
-        <tr class="conditioning">
-            <td>Behentrimonium Chloride</td>
-            <td>Quaternary Ammonium Salt</td>
-            <td>0.5% - 3%</td>
-            <td>بلسم الشعر، ماسكات، يقلل التشابك ويضيف نعومة</td>
-        </tr>
-        <tr class="conditioning">
-            <td>PEG-7 Glyceryl Cocoate</td>
-            <td>Conditioning Agent / Emollient</td>
-            <td>1% - 5%</td>
-            <td>شامبو وبلسم، يحسن الإحساس على الشعر ويضيف ترطيب خفيف</td>
-        </tr>
-    </table>
+            <div class="category">
+                <h2>🟠 المستحلبات / المذيبات / المثبتات</h2>
+                <table>
+                    <tr>
+                        <th>المادة</th>
+                        <th>النوع / الصنف</th>
+                        <th>نسبة الاستخدام الموصى بها</th>
+                        <th>الاستخدامات الأساسية</th>
+                    </tr>
+                    <tr class="emulsifiers">
+                        <td>Abil Care 85</td>
+                        <td>O/W Emulsifier</td>
+                        <td>1% - 4%</td>
+                        <td>كريمات ولوسيون، يعطي ملمس حريري ناعم</td>
+                    </tr>
+                    <tr class="emulsifiers">
+                        <td>Cetearyl Alcohol</td>
+                        <td>Fatty Alcohol / Thickener</td>
+                        <td>1% - 5%</td>
+                        <td>كريمات، لوشن، بلسم، يعطي قوام واستقرار</td>
+                    </tr>
+                    <tr class="emulsifiers">
+                        <td>Tegocare 165</td>
+                        <td>Glyceryl Stearate & PEG-100 Stearate</td>
+                        <td>2% - 6%</td>
+                        <td>O/W Emulsifier، كريمات ولوسيون، يساعد على بناء القوام</td>
+                    </tr>
+                    <tr class="emulsifiers">
+                        <td>PEG 40</td>
+                        <td>Solubilizer</td>
+                        <td>0.5% - 3%</td>
+                        <td>مزيلات المكياج، منظفات، مذيب للعطور والزيوت</td>
+                    </tr>
+                    <tr class="emulsifiers">
+                        <td>Tween 20</td>
+                        <td>Solubilizer / Surfactant</td>
+                        <td>0.5% - 2%</td>
+                        <td>مزيلات المكياج، Micellar Water، مستحضرات منظفة</td>
+                    </tr>
+                    <tr class="emulsifiers">
+                        <td>Protegin XN</td>
+                        <td>W/O Emulsifier</td>
+                        <td>2% - 5%</td>
+                        <td>كريمات ولوسيون مقاومة للماء، مستحضرات غنية وواقية</td>
+                    </tr>
+                    <tr class="emulsifiers">
+                        <td>Flocare ET 36 V</td>
+                        <td>Multi-functional Emulsifier & Stabilizer</td>
+                        <td>1% - 4%</td>
+                        <td>قاعدة كريمات ولوسيون، يعطي قوام سريع ومستحلب مستقر، متعدد الحواس</td>
+                    </tr>
+                    <tr class="emulsifiers">
+                        <td>Ceteareth 20</td>
+                        <td>Emulsifier / Surfactant</td>
+                        <td>1% - 3%</td>
+                        <td>كريمات، لوشن، شامبو، استحلاب O/W</td>
+                    </tr>
+                    <tr class="emulsifiers">
+                        <td>Tween 80</td>
+                        <td>Solubilizer / Emulsifier</td>
+                        <td>0.5% - 5%</td>
+                        <td>مستحضرات التجميل، المستحلبات، مذيب للزيوت العطرية</td>
+                    </tr>
+                </table>
+            </div>
 
-    <div class="footer">
-        <p>ملاحظة: هذه النسب إرشادية وقد تختلف حسب التركيبة الكاملة للمنتج والاستخدام النهائي</p>
-        <p>يوصى دائماً بإجراء اختبارات قبل الإنتاج النهائي</p>
+            <div class="category">
+                <h2>🔵 مواد التكييف (للشعر/البشرة)</h2>
+                <table>
+                    <tr>
+                        <th>المادة</th>
+                        <th>النوع / الصنف</th>
+                        <th>نسبة الاستخدام الموصى بها</th>
+                        <th>الاستخدامات الأساسية</th>
+                    </tr>
+                    <tr class="conditioning">
+                        <td>Polyquaternium 7 (10% SNF)</td>
+                        <td>Cationic Polymer</td>
+                        <td>0.2% - 1.5%</td>
+                        <td>بلسم الشعر، شامبو 2 في 1، تحسين التمشيط والنعومة</td>
+                    </tr>
+                    <tr class="conditioning">
+                        <td>Polyquaternium 10 SNF</td>
+                        <td>Cationic Polymer</td>
+                        <td>0.1% - 0.5%</td>
+                        <td>شامبو، بلسم، ماسكات للشعر، يقلل التشابك والتطاير</td>
+                    </tr>
+                    <tr class="conditioning">
+                        <td>Polyquaternium 7 Super Concentrated (40% active)</td>
+                        <td>Cationic Polymer</td>
+                        <td>0.1% - 0.8%</td>
+                        <td>تركيز عالي للبلسم والماسكات، تكييف فعال وملمس حريري</td>
+                    </tr>
+                    <tr class="conditioning">
+                        <td>Behentrimonium Chloride</td>
+                        <td>Quaternary Ammonium Salt</td>
+                        <td>0.5% - 3%</td>
+                        <td>بلسم الشعر، ماسكات، يقلل التشابك ويضيف نعومة</td>
+                    </tr>
+                    <tr class="conditioning">
+                        <td>PEG-7 Glyceryl Cocoate</td>
+                        <td>Conditioning Agent / Emollient</td>
+                        <td>1% - 5%</td>
+                        <td>شامبو وبلسم، يحسن الإحساس على الشعر ويضيف ترطيب خفيف</td>
+                    </tr>
+                    <tr class="conditioning">
+                        <td>Lauryl amine Oxide</td>
+                        <td>Surfactant / Foam Booster</td>
+                        <td>2% - 8%</td>
+                        <td>منتجات التنظيف، معزز للرغوة، منعم للأقمشة</td>
+                    </tr>
+                    <tr class="conditioning">
+                        <td>Fabric softener</td>
+                        <td>Fabric Conditioner</td>
+                        <td>3% - 8%</td>
+                        <td>منعم الأقمشة، يضيف نعومة ويقلل الكهرباء الساكنة</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="category">
+                <h2>🟣 المواد الحافظة (Preservatives)</h2>
+                <table>
+                    <tr>
+                        <th>المادة</th>
+                        <th>النوع / الصنف</th>
+                        <th>نسبة الاستخدام الموصى بها</th>
+                        <th>الاستخدامات الأساسية</th>
+                    </tr>
+                    <tr class="preservatives">
+                        <td>Phenoxy ethanol pure (Arxada (Troy))</td>
+                        <td>Preservative</td>
+                        <td>0.5% - 1%</td>
+                        <td>مادة حافظة لمستحضرات التجميل والعناية الشخصية</td>
+                    </tr>
+                    <tr class="preservatives">
+                        <td>Phenoxy ethanol with EHG (Arxada (Troy))</td>
+                        <td>Preservative</td>
+                        <td>0.5% - 1%</td>
+                        <td>مادة حافظة مع إضافات لتحسين الفعالية</td>
+                    </tr>
+                    <tr class="preservatives">
+                        <td>DMDMH</td>
+                        <td>Preservative</td>
+                        <td>0.2% - 0.6%</td>
+                        <td>مادة حافظة لمستحضرات العناية بالبشرة والشعر</td>
+                    </tr>
+                    <tr class="preservatives">
+                        <td>Citric Acid & Potassium Sorbate (Cit Mit 1.5%)</td>
+                        <td>Natural Preservative</td>
+                        <td>0.5% - 1.5%</td>
+                        <td>مادة حافظة طبيعية للمستحضرات العضوية والطبيعية</td>
+                    </tr>
+                    <tr class="preservatives">
+                        <td>Chlorohexadine</td>
+                        <td>Antiseptic / Preservative</td>
+                        <td>0.1% - 0.5%</td>
+                        <td>مطهر ومادة حافظة للمستحضرات الطبية والتجميلية</td>
+                    </tr>
+                    <tr class="preservatives">
+                        <td>DCMX</td>
+                        <td>Preservative / Biocide</td>
+                        <td>0.1% - 0.3%</td>
+                        <td>مادة حافظة ومبيدة للجراثيم في المنظفات والمطهرات</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="category">
+                <h2>🟤 منتجات التنظيف والتطهير</h2>
+                <table>
+                    <tr>
+                        <th>المادة</th>
+                        <th>النوع / الصنف</th>
+                        <th>نسبة الاستخدام الموصى بها</th>
+                        <th>الاستخدامات الأساسية</th>
+                    </tr>
+                    <tr class="detergents">
+                        <td>Sodium Xymene Sulphonate (Rinse Aid)</td>
+                        <td>Surfactant</td>
+                        <td>2% - 10%</td>
+                        <td>منظفات، مساعد شطف، يحسن التخلص من البقع</td>
+                    </tr>
+                    <tr class="detergents">
+                        <td>Carbapol (SNF)</td>
+                        <td>Thickener</td>
+                        <td>0.1% - 1%</td>
+                        <td>مثخن للمستحضرات السائلة، gel formulations</td>
+                    </tr>
+                    <tr class="detergents">
+                        <td>Coco Glucoside</td>
+                        <td>Surfactant</td>
+                        <td>3% - 15%</td>
+                        <td>منظف لطيف، مستحضرات طبيعية، شامبو وجل استحمام</td>
+                    </tr>
+                    <tr class="detergents">
+                        <td>Decyl glucoside</td>
+                        <td>Surfactant</td>
+                        <td>3% - 15%</td>
+                        <td>منظف لطيف، مستحضرات للأطفال والبشرة الحساسة</td>
+                    </tr>
+                    <tr class="detergents">
+                        <td>DDAC 80%</td>
+                        <td>Disinfectant</td>
+                        <td>0.5% - 2%</td>
+                        <td>مطهر، معقم للأسطح، مضاد للجراثيم والفطريات</td>
+                    </tr>
+                    <tr class="detergents">
+                        <td>Glutaraldehyde 50</td>
+                        <td>Disinfectant</td>
+                        <td>0.5% - 2%</td>
+                        <td>مطهر قوي، معقم للمعدات والأسطح</td>
+                    </tr>
+                    <tr class="detergents">
+                        <td>Antara (Syntran 5900)</td>
+                        <td>Dispersing Agent</td>
+                        <td>0.5% - 3%</td>
+                        <td>عامل تشتيت للمواد الصلبة في المنظفات</td>
+                    </tr>
+                    <tr class="detergents">
+                        <td>Sodium sulphate (Powder)</td>
+                        <td>Filler / Flow Agent</td>
+                        <td>5% - 40%</td>
+                        <td>حشو للمنظفات المسحوقية، يحسن التدفق</td>
+                    </tr>
+                    <tr class="detergents">
+                        <td>Green STPP</td>
+                        <td>Builder</td>
+                        <td>10% - 30%</td>
+                        <td>منظف، يعزل المعادن الثقيلة لتحسين التنظيف</td>
+                    </tr>
+                    <tr class="detergents">
+                        <td>Fabric softener thickener</td>
+                        <td>Thickener</td>
+                        <td>0.5% - 2%</td>
+                        <td>مثخن لمنعم الأقمشة، يحسن القوام والمظهر</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="category">
+                <h2>⚫ مواد أخرى متعددة الاستخدامات</h2>
+                <table>
+                    <tr>
+                        <th>المادة</th>
+                        <th>النوع / الصنف</th>
+                        <th>نسبة الاستخدام الموصى بها</th>
+                        <th>الاستخدامات الأساسية</th>
+                    </tr>
+                    <tr class="others">
+                        <td>Mono propylene glycol USP</td>
+                        <td>Humectant / Solvent</td>
+                        <td>2% - 15%</td>
+                        <td>مرطب، مذيب، مستحضرات التجميل والعناية الشخصية</td>
+                    </tr>
+                    <tr class="others">
+                        <td>NTA (chelating agent)</td>
+                        <td>Chelating Agent</td>
+                        <td>0.5% - 2%</td>
+                        <td>عامل خالب، يعزل المعادن الثقيلة في المنظفات</td>
+                    </tr>
+                    <tr class="others">
+                        <td>Enzymes</td>
+                        <td>Biological Catalyst</td>
+                        <td>0.5% - 2%</td>
+                        <td>إنزيمات لإزالة البقع العضوية في المنظفات</td>
+                    </tr>
+                    <tr class="others">
+                        <td>Opti thick 35 (SNF)</td>
+                        <td>Rheology Modifier</td>
+                        <td>0.5% - 3%</td>
+                        <td>معدل للريولوجيا، يتحكم في قوام المنتجات</td>
+                    </tr>
+                    <tr class="others">
+                        <td>HEDP 60 liquid</td>
+                        <td>Chelating Agent / Scale Inhibitor</td>
+                        <td>0.5% - 2%</td>
+                        <td>مثبط للترسبات، عامل خالب في المنظفات</td>
+                    </tr>
+                    <tr class="others">
+                        <td>HEDP 85% powder</td>
+                        <td>Chelating Agent / Scale Inhibitor</td>
+                        <td>0.3% - 1.5%</td>
+                        <td>مثبط للترسبات (صيغة مسحوق)</td>
+                    </tr>
+                    <tr class="others">
+                        <td>Disodium coco amphodiacetate</td>
+                        <td>Surfactant</td>
+                        <td>3% - 15%</td>
+                        <td>منظف لطيف، مستحضرات الاستحمام والعناية الشخصية</td>
+                    </tr>
+                    <tr class="others">
+                        <td>Acetic acid</td>
+                        <td>pH Adjuster / Solvent</td>
+                        <td>0.1% - 5%</td>
+                        <td>مضبط للأس الهيدروجيني، مذيب</td>
+                    </tr>
+                    <tr class="others">
+                        <td>Pearlizing agent</td>
+                        <td>Pearlescent Agent</td>
+                        <td>0.5% - 3%</td>
+                        <td>يعطي تأثير اللؤلؤ للمستحضرات السائلة</td>
+                    </tr>
+                    <tr class="others">
+                        <td>Ascorbic acid</td>
+                        <td>Antioxidant / Vitamin C</td>
+                        <td>0.5% - 5%</td>
+                        <td>مضاد للأكسدة، فيتامين C لمستحضرات العناية بالبشرة</td>
+                    </tr>
+                    <tr class="others">
+                        <td>Cublen ACS 402</td>
+                        <td>Stabilizer / Chelating Agent</td>
+                        <td>0.5% - 2%</td>
+                        <td>مثبت وكلاب للهيبوكلوريت في منتجات التبييض</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="coming-soon">
+                <h2>🟠 منتجات قريباً</h2>
+                <p>المنتجات التالية ستكون متوفرة خلال الأسابيع القادمة:</p>
+                <ul>
+                    <li>Benzoyl alcohol - مادة حافظة ومذيب</li>
+                    <li>PEG 400 - مذيب ومرطب</li>
+                    <li>Acid thickener - مثخن للتركيبات الحمضية</li>
+                    <li>BKC 80/Ethanol - مطهر ومعقم</li>
+                    <li>Petroleum jelly - مرطب وحاجز للبشرة</li>
+                </ul>
+            </div>
+
+            <div class="footer">
+                <p>© 2023 دليل مواد التجميل والمنظفات - جميع الحقوق محفوظة</p>
+                <p>هذه النسب إرشادية وقد تختلف حسب التركيبة الكاملة للمنتج والاستخدام النهائي</p>
+                <p>يوصى دائماً بإجراء اختبارات قبل الإنتاج النهائي</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
