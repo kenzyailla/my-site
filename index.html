@@ -335,6 +335,106 @@
             .search-box {
                 min-width: 100%;
             }
+   /* تحسينات للهواتف المحمولة */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                border-radius: 12px;
+            }
+            
+            header {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .subtitle {
+                font-size: 0.9rem;
+            }
+            
+            .content {
+                padding: 15px;
+            }
+            
+            h2 {
+                font-size: 1.2rem;
+            }
+            
+            .properties-grid, .formula-cards {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+            
+            .property-card, .formula-card {
+                padding: 12px;
+            }
+            
+            .concentration-table {
+                font-size: 0.8rem;
+            }
+            
+            .concentration-table th, .concentration-table td {
+                padding: 8px 10px;
+            }
+            
+            /* جعل الجدول قابل للتمرير الأفقي على الشاشات الصغيرة */
+            .table-container {
+                overflow-x: auto;
+                margin: 15px 0;
+            }
+            
+            /* تحسين عرض الجدول على الشاشات الصغيرة */
+            .concentration-table {
+                min-width: 500px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.3rem;
+            }
+            
+            h2 {
+                font-size: 1.1rem;
+            }
+            
+            .property-card h3, .formula-card h3 {
+                font-size: 1rem;
+            }
+            
+            .intro, .property-card p, .ingredient, .instructions li, .tip {
+                font-size: 0.85rem;
+            }
+            
+            .concentration-table {
+                font-size: 0.75rem;
+            }
+            
+            .concentration-table th, .concentration-table td {
+                padding: 6px 8px;
+            }
+        }
+        
+        /* تحسينات خاصة للشاشات الكبيرة */
+        @media (min-width: 1200px) {
+            .container {
+                margin: 20px auto;
+            }
+        }
+        
+        /* تحسينات للوضع الأفقي للهواتف */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .container {
+                max-height: 90vh;
+                overflow-y: auto;
+            }
+        }
+
         }
     </style>
 </head>
